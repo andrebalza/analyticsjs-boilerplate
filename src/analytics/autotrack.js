@@ -13,7 +13,7 @@ import 'autotrack/lib/plugins/url-change-tracker';
  * The tracking ID for your Google Analytics property.
  * https://support.google.com/analytics/answer/1032385
  */
-const TRACKING_ID = 'UA-12345-1';
+const TRACKING_ID = 'UA-26737402-10';
 
 
 /**
@@ -182,7 +182,7 @@ const requireAutotrackPlugins = () => {
   });
   ga('require', 'maxScrollTracker', {
     sessionTimeout: 30,
-    timeZone: 'America/Los_Angeles',
+    timeZone: 'Europe/Helsinki',
     maxScrollMetricIndex: getDefinitionIndex(metrics.MAX_SCROLL_PERCENTAGE),
   });
   ga('require', 'outboundLinkTracker', {
@@ -191,12 +191,12 @@ const requireAutotrackPlugins = () => {
   ga('require', 'pageVisibilityTracker', {
     visibleMetricIndex: getDefinitionIndex(metrics.PAGE_VISIBLE),
     sessionTimeout: 30,
-    timeZone: 'America/Los_Angeles',
+    timeZone: 'Europe/Helsinki',
     fieldsObj: {[dimensions.HIT_SOURCE]: 'pageVisibilityTracker'},
   });
-  ga('require', 'urlChangeTracker', {
+  /*  ga('require', 'urlChangeTracker', { not needed?
     fieldsObj: {[dimensions.HIT_SOURCE]: 'urlChangeTracker'},
-  });
+  }); */
 };
 
 
