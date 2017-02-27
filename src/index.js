@@ -4,7 +4,7 @@ const main = () => {
   // other variations:
   // - `./analytics/autotrack.js`
   // - `./analytics/multiple-trackers.js`
-  import('./analytics/base.js').then((analytics) => analytics.init());
+  import('./analytics/autotrack.js').then((analytics) => analytics.init());
 
   // Initate all other code paths here...
 };
